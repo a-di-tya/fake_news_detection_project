@@ -1,0 +1,160 @@
+/* Reset and Base Styling */
+/* Reset and Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #2D74E1, #01C3D4); /* Smooth gradient background */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Main Container */
+.container {
+    width: 100%;
+    max-width: 900px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+/* Header Styling */
+.header h1 {
+    color: #2D74E1;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.header p {
+    color: #6c757d;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+/* Form Styling */
+form {
+    margin-top: 40px;
+}
+
+/* Textarea Styling */
+textarea {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    outline: none;
+    resize: vertical;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Focus effect for textarea */
+textarea:focus {
+    border-color: #2D74E1;
+    box-shadow: 0 4px 12px rgba(45, 116, 225, 0.4);
+}
+
+/* Button Styling */
+button {
+    background-color: #2D74E1;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+/* Button Hover effect */
+button:hover {
+    background-color: #01C3D4;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Result Section Styling */
+.result {
+    margin-top: 40px;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    transition: all 0.3s ease;
+}
+
+/* Success (Real News) - Green */
+.result.false {
+    color: #28a745;
+    background-color: #d4edda;
+    border: 2px solid #28a745;
+}
+
+/* Error (Fake News) - Red */
+.result.true {
+    color: #e74c3c;
+    background-color: #f8d7da;
+    border: 2px solid #e73d3d;
+}
+
+/* Animation for Result */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.result {
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+/* Responsive Design for Small Screens */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 40px;
+    }
+
+    .header h1 {
+        font-size: 32px;
+    }
+
+    .header p {
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+        padding: 14px 30px;
+    }
+
+    textarea {
+        max-height: 250px;
+    }
+}
