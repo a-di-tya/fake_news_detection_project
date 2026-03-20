@@ -4,12 +4,18 @@ The system uses a combination of machine learning techniques and real-time fact-
 
 ->Tech Stack:-
 Programming Language: Python
+
 Libraries: Pandas, NumPy, Scikit-learn, NLTK
+
 API Integration: Google Fact Check API
+
 Model Used: Logistic Regression 
+
 Frontend : Flask
+
 Tools:VS Code
-->Data Source:  Kaggle datasets
+
+Data Source:  Kaggle datasets
 Real-time verification using Google Fact Check API.
 
 ->Highlights / Features:-
