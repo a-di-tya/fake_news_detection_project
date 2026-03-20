@@ -44,5 +44,6 @@ Can be extended for use in social media platforms or news agencies
 Improves awareness about misinformation
 
 Author:
+
 Aditya Pandey
 B.Tech Student | Data & AI Enthusiast
