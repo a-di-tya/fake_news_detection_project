@@ -13,10 +13,13 @@ Tools:VS Code
 Real-time verification using Google Fact Check API.
 
 ->Highlights / Features:-
+
 Business Problem:Fake news spreads rapidly on social media and news platforms, making it difficult for users to identify trustworthy information. There is a need for a system that can automatically verify news content.
+
 Goal of the Project:To build a system that can classify news as real or fake
 To integrate real-time fact-checking for better accuracy
 To provide a user-friendly way to verify news articles
+
 How It Works (Workflow):User inputs a news headline or article
 Text preprocessing is applied (cleaning, tokenization, stopword removal)
 The trained ML model analyzes the content
